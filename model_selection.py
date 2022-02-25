@@ -1,3 +1,7 @@
+from os.path import dirname, realpath, join
+import sys
+sys.path.append(dirname(realpath(__file__)))
+
 from models.GLUNet.GLU_Net import GLUNetModel
 from models.PWCNet.pwc_net import PWCNetModel
 from models.PDCNet.PDCNet import PDCNet_vgg16
